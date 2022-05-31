@@ -1,0 +1,119 @@
+:root {
+    --main-color: #ff2c1f;
+    --text-color: #020307;
+    --bg-color: #fff;
+  }
+  
+
+.logo {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--bg-color);
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+  }
+  .logo .bx {
+    font-size: 24px;
+  }
+
+  .container{
+    width: 100%;
+    min-height:640px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: rgb(2, 3, 7, 0.4);
+  }
+  
+  .container img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: -1;
+  }  
+  
+  .play img{
+    font-size: 2rem;
+    height: 30px;
+    width: 30px;
+    border-radius: 40%;
+    background-color: var(--bg-color);
+    border: 4px solid rgb(2, 3, 7, 0.4);
+    color: var(--main-color);
+    position: absolute;
+    right: 4rem;
+    bottom: 10%;
+  }
+  .play img:hover{
+    height: 35px;
+    width: 35px;
+    background-color: rgba(255, 0, 0, 0.342);
+    color: var(--bg-color);
+    transition: 0.2s all linear;
+  
+  }
+  
+  
+  .homeText{
+  z-index: 1000;
+  padding: 0 150px;
+  
+  }
+  
+  .homeText span {
+    color: var(--bg-color);
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  
+  .homeText h1{
+    color: var(--bg-color);
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  .btn{
+    padding: 0.7rem 1.4rem;
+    background: var(--main-color);
+    color: var(--bg-color);
+    font-weight: 400;
+    border-radius: 0.5rem;
+  }
+  
+  .btn:hover{
+    background:  #fa1216;
+  }
+  
+  @media(max-width:1080px){
+      .homeText{
+          padding: 0 100px;
+      }
+  }
+
+
+  @media(max-width:774px){
+ 
+  
+    .homeText h1{
+      font-size: 2.4rem;
+    }
+  
+    .btn{
+      padding: 0.6rem 1.2rem;
+    }
+  }
+
+  @media(max-width:991px){
+
+    .homeText{
+      padding: 0 4%;
+    }
+    .homeText h1{
+      font-size: 3rem;
+    }
+  }
+  
