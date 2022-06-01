@@ -3,7 +3,7 @@ export function get(path) {
   return fetch(API + path, {
     headers: {
       Authorization:
-        `Bearer ${process.env.MY_EMAIL}`,
+        `Bearer ${process.env.TOKEN}`,
       "Content-Type": "application/json;charset=utf-8",
     },
   }).then((result) => result.json());
